@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    color: #000;
+    font-size: 1em;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/* header styling */
+
+.navbg{
+    background-color: rgb(3,37,65);
+
+    height:64px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.navbg ul{
+    list-style: none;
+    color: #fff;
+    font-weight: 600;
+    justify-content: space-between;
+
+
+}
+.navimg{
+    margin-left: -6px;
+    margin-top: 7px;
+}
+.navbg ul li img{
+    margin-left: -6px;
+    margin-top: 7px;
+}
+.navbg ul li{
+    padding: 0.5rem;
+    margin-right: 14px;
+}
+
+.navbarlistul{
+    display: flex;
+    padding:0px 40px;
+    margin-top: 1px;
+    margin-left: 106px;
+    margin-right: 86px;
+    align-items: center;
+
+}
+.laungague{
+    width: 28px;
+    height: 26px;
+    align-content: center;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 3px 5px;
+    transition: linear .1s;
+    color: #fff;
+    font-weight: 600;
+    font-size: .9em;
+    text-transform: uppercase;
+
+}
+.laungague:hover{
+    color:rgb(3,37,65);
+    background-color: #fff;
+    cursor: pointer;
+}
+.iconstyle{
+    padding-top: 3px;
+    font-size: 1.3rem;
+
+}
+.searchicon{
+font-size: 1.75rem;
+width:1em;
+height:1em;
+}
+/* body bannerstyling */
+
+.container{
+    width: 1300px;
+    margin:auto;
+}
+.top{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUthoIFfbNyGp21Ak88Se7mFmTDeo4y2hognN5EEY51w&s);
+    min-height: 300px;
+    height: calc(100vh/2.5);
+    max-height: 360px;
+    background-color: rgba(0,0,0,.2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+
+}
+.banner {
+    
+    min-height: 300px;
+    max-height: 360px;
+    position: relative;
+    color: #fff;
+
+  }
+  
+  .bannerbg {
+    
+    position: absolute; /* Position the overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+  }
+  
+  
+  .banner::before {
+    content: '';
+    background-image: url(https://media.themoviedb.org/t/p/w1920_and_h600_multi_faces/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the background image stays behind the overlay */
+  }
+  .content,.bannerbg{
+    
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 52px 40px; 
+ }
+  .title{
+    margin-top:4px;
+    margin-bottom: 20px;
+    width:100%;
+  }
+  .gradienText{
+    background-image: linear-gradient(to bottom right, #9dcba4 0%, #53b1dd 50%, #298af5 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.title h2,.gradienText h2{
+    line-height: 1;
+
+    font-size: 3rem;
+    font-weight: 700;
+}
+.gradienText h2{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.2;
+
+}
+.title h3{
+
+    font-size: 2em;
+    font-weight: 600;
+    
+}
+.search{
+    margin-top: 25px;
+    position: relative;
+
+}
+.search input  {
+    font:inherit;
+    width: 100%;
+    height: 46px;
+    border: 0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    line-height: 46px;
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+.searchbutton{
+    height: 46px;
+    padding: 10px 26px;
+    border: 0;
+    background: linear-gradient(to right,rgba(30,213,169,1) 0%,rgba(1,180,228,1) 100%);
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    color: #fff;
+    font: inherit;
+}
+.button{
+    font-weight: 700;
+
+    position: absolute;
+    top: 0;
+    right: -1px;
+}
+.searchbutton:hover{
+    color:rgb(3,37,65);
+    cursor: pointer;
+
+}
+
+.wrap{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.bannerText{
+    margin-top: 10px;
+}
+.bannerText p{
+    font-size: 20px;
+    margin-bottom: 20px ;
+    margin:0 0 16px;
+}
+.bannerText h4{
+    display: inline-flex;
+    border-radius: 30px;
+    font-weight: 600;
+    align-items: center;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    transition: linear .1s;
+    color: #fff;
+
+}
+.cardContent:hover{
+    cursor: pointer;
+    color: rgb(1,180,228);
+}
+.bannerText h4:hover {
+    cursor: pointer;
+}
+.arrow{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    line-height: inherit;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: inherit;
+    margin-left: 4px;
+    background-image: url(https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-830-arrow-thin-right-white-27b356aac3227210acca2ae44fcfed8a6c0ca7adde4e867fe9793cae4ebda9d1.svg);
+}
+/* css styling for whatspopular */
+.whatspopular{
+    position: relative;
+    padding-top: 30px;
+    
+}
+.whatsPopularHeader{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+}
+.sectionTitle{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.switch{
+    cursor: pointer;
+
+    z-index: 1;
+    position: relative;
+height: 2rem;
+border-style: solid;
+color:rgb(3,37,65);
+border-radius: 30px;
+border: 1px solid black;
+font-weight: 600;
+display: flex;
+align-items: center;
+}
+.switchText{
+    /* color: aliceblue; */
+    
+    padding-top: 0.25rem; 
+    padding-bottom: 0.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    height:32px;
+    border-radius: 30px;
+}
+.switchTextBg{
+    
+    height: 2rem;
+    width: 7rem;
+    background-color:rgb(3,37,65) ;
+    border-radius: 30px;
+    position: absolute;
+    z-index: -1;
+    transition: left .25s;
+
+
+}
+.activeTextColor {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right,#c0fecf 0,#1ed5a9 100%);
+  }
+  .trailers{
+    background: linear-gradient(to right, rgba(3, 37, 65, 0.75) 0%, rgba(3, 37, 65, 0.75) 100%);
+}
+.trailers .switch{
+    border: 1px solid rgba(30,213,169,1)
+}
+.trailers div,.trailers .cardContent h1,.trailers .cardContent p {
+    color:#fff;
+}
+
+  /* movie cards styling */
+  .movieList{
+    display: flex;
+    padding-bottom: 1.25rem;
+    padding-left: 1.25rem;
+padding-right: 2.25rem;
+overflow-x: auto;
+  }
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background:transparent;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+background:rgb(219,219,219);
+}
+.movieimg{
+    position: relative;
+}
+.imgcircle{
+    position:absolute;
+    bottom: -1.2rem;
+    left:0.5rem;
+}
+.circle{
+    width: 38px;
+    height: 38px;
+    background-color: #081c22;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.percentSymbol{
+    /* font-family: "Consensus"!important; */
+    font-size: 6px;
+
+    position: absolute;
+    top:3px;
+}
+.svgcircle{
+    transform: rotate(-90deg);
+}
+.circleYellowBar{
+    scale: 0.95;
+}
+.percentNumber{
+    font-family: "Consensus"!important;
+
+    position: absolute;
+    left:6px;
+    font-weight: 600;
+    color: #fff;
+
+}
+.ellipsis {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%; 
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+.ellipsis div{
+   
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+.ellipsis:hover{
+    cursor: pointer;
+    background-color: rgba(1,180,228,1) ;
+}
+.imgdots{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 0.75rem;
+    right:10px;
+}
+
+.ellipseDots{
+    color: #4a5568;
+    padding-left: 2px;
+    transform: scale(0.42);
+    gap:2px;
+
+}
+
+  .movieCard{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.25rem;
+    gap:0.5rem;
+  }
+  .moviecardsstyling{
+    padding-top: 1.25rem;
+  }
+  .cardContent{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    padding: 26px 10px 12px;
+
+  }
+  .cardtitle{
+    font-weight: 700;
+    font-size: 1em;
+    color: #000;
+
+  }
+  .carddate{
+    font-weight: normal;
+    color:rgba(0,0,0,.6);
+    font-size: 1em;
+
+  }
+  .cardImg{
+    width: 150px;
+    height: 225px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    border-radius: 8px;
+}
+.trending {
+    background-image: url(https://www.themoviedb.org/assets/2/v4/misc/trending-bg-39afc2a5f77e31d469b25c187814c0a2efef225494c038098d62317d923f8415.svg);
+    background-position: 50% 200px;
+    background-size: 1300px;
+    background-repeat: no-repeat;
+}
+/* blur effect to the movie cards  */
+.blurEffect{
+    position: absolute;
+    top:0px;
+    right:0px;
+    color: red;
+    width:4rem;
+    height: 100%;
+
+}
+.blurbox{
+    height:100%;
+    width: 100%;
+
+    background-image: linear-gradient(to right,rgba(255,255,255,0)0,#fff 100%);
+}
+/* footer styling */
+footer {
+    max-width: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-image: radial-gradient(at 30% top, #031d33 0%, rgba(3, 37, 65, 1) 70%);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #fff;
+    font-size: .9em;
+}
+footer nav div {
+    margin-right: 40px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+footer nav div.join{
+    text-align: right;
+    position: relative;
+    top: -36px;
+    right: 0;
+}
+footer nav div.join img {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+}
+footer nav a.rounded{
+    position: relative;
+    top: 140px;
+    border-color: #fff;
+    background-color: #fff;
+    color: rgb(1,180,228);
+    font-size: 1.3em;
+    display: inline-block;
+    word-wrap: break-word;
+    white-space: normal;
+
+}
+.rounded {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: linear .1s;
+}
+footer nav a.rounded,.footer nav h3{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+footer nav h3{
+    font-size: 1.4em;
+    line-height: 1.4em;
+    color: #fff;
+    white-space: nowrap;
+}
+footer nav ul li{
+    line-height: 1.6em;
+    max-width: 260px;
+    color: #fff;
+}
+footer nav ul li a{
+    font-size: 1.2em;
+}
+footer nav a{
+    color: #fff;
+}
